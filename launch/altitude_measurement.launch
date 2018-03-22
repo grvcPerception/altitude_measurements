@@ -1,0 +1,10 @@
+<!--
+-->
+<launch>
+
+
+	<node pkg="altitude_measurement" type="altitude_measurement.py" output="screen" name="altitude_measurement" launch-prefix="sudo -E">
+		<param name="altitude_topic" value="/use_robot/lidarlite_range"/>
+	</node>
+
+</launch>
